@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1300px) and (min-width: 1300px)" href="./styles/special-style.css"> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./styles/mobile.css">
+    <title>Document</title> 
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="conteiner header-content" >
+
+            <div class="logo">
+                IC "Repair Design Project"
+            </div>
+
+            <nav id="nav">
+                <ul class="header-navigation ">
+                    <li class="header-navigation__item"><a href="#">Home</a></li>
+                    <li class="header-navigation__item"><a href="#">PROJECTS</a></li>
+                    <li class="header-navigation__item"><a href="#">MEASUREMENT</a></li>
+                    <li class="header-navigation__item"><a href="#">TEAM</a></li>
+                    <li class="header-navigation__item"><a href="#">REVIEWS</a></li>
+                    <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+
+            <div class="call">
+                <div class="tel">+7 (928) 768-32-39</div> 
+                <button class="button btn-call">Request a call</button>
+            </div>
+
+        </div>
+    </header>
+    
+    <main>
+
+        <!-------- Фоновая картинка + текст ------>
+
+        <section class="hero">
+
+            <div class="conteiner">
+                <div class="hero-conteiner">
+                    <h1 class="title">Turnkey Repair in the <br>
+                        city of <span>Rostov-on-Don</span>
+                    </h1>
+                    <p>Get ready-made turnkey repairs on time  <br> 
+                        with work time saving up to 45 days and <span>20% from cost</span> 
+                        of materials due to the organization of work</p>
+                    <button class="button btn-primary">CALCULATE the COST</button>
+                    <button class="button btn-app"><span>Submit YOUR </span> APPLICATION </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-------- Завершенные проекты ----------->
+        
+        <section class="projects">
+
+            <div class="conteiner project-content">
+
+                 <!-- навигатор по проектам -->
+                <ul class="project-navigation">                        
+                    <li class="project-navigation__item item-active" id="proj-item1" onclick="changePhoto('1')">Rostov-on-Don, Admiral</li>
+                    <li class="project-navigation__item" id="proj-item2" onclick="changePhoto('2')">Sochi Thieves</li>
+                    <li class="project-navigation__item" id="proj-item3" onclick="changePhoto('3')">Rostov-on-Don Patriotic</li>
+                </ul>
+
+                <!-- Карточка проекта -->
+                <div class="project-card">     
+
+                    <div class="project-box-left">
+                        <div class="project-description">
+                            <h2 class="subtitle">Completed <br> projects</h2>
+                            <p class="text"> Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br> 
+                                market we have made happy more than 1000 families</p>
+                            <div class="project-photo-block">
+                                <button class="arrows prev-arrow"></button>
+                                <button class="arrows next-arrow"></button>
+                            </div>
+                            <div class="project-description-conteiner">
+                                <div class="description-el">
+                                    <h3 class="subtitle-md">City:</h3>
+                                    <p class="description-text-md">Rostov-on-Don<br> 
+                                        LCD admiral</p>
+                                </div>
+                                <div class="description-el">
+                                    <h3 class="subtitle-md">apartment area:</h3>
+                                    <p class="description-text-md">81 m2</p>
+                                </div>
+                                <div class="description-el">
+                                    <h3 class="subtitle-md">Repair time:</h3>
+                                    <p class="description-text-md">3.5 months</p>
+                                </div>
+                                <div class="description-el">
+                                    <h3 class="subtitle-md">Repair Cost:</h3>
+                                    <p class="description-text-md">Upon request</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <div class="point-previous"><img src="./images/Group_back.svg" alt="Назад"> </div> 
+                            <ul class="project-footer-point">
+                                <li class="point current-point"></li> 
+                                <li class="point"> </li> 
+                                <li class="point"> </li> 
+                            </ul>
+                        <div class="point-next"> <img src="./images/Group_back.svg" class="horizontal-flip" alt="Вперед"></div> 
+                        </div>
+                    </div>
+
+                    <div class="project-img" id="project-img"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--------- Контроль онлайн ------------>
+   
+        <section class="online">
+            <div class="conteiner online-content">
+   
+                <!-- блок разделителя (заголовок - 1, картинка между линий - 2)  -->
+   
+                <div class="separator-wrap txt-white">
+                    <div class="separator__title ">online control</div>
+                    <div class="separator-icon-wrap">
+                        <div class="separator__line"></div>
+                        <div class="separator__icon online-icon"></div>
+                        <div class="separator__line"></div>
+                    </div>
+                </div>
+
+                <!-- видео-онлайн блок с картинкой, по центру круглая кнопка с треугольником -->
+                <div class="video-wrap online-video">
+                    <div class="video__content online-video-content"></div>
+                    <button class="video__button online-video-button"></button>
+                </div>
+
+                <!-- Разделитель - длинная линия -->
+                <div class="separator-wrap txt-white marg_mini">
+                    <div class="separator__line separator__line-lg"></div>
+                </div>
+                <!-- Основной текст секции - по центру, черный, средний -->
+                <div class="online-video-info">
+                    <p  class="text-md">
+                        At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+                        At any time, you can go to our website and monitor the progress of work in your apartment. 
+                        You can watch the live broadcast from one of our facilities! <br>
+                        Leave a request below and you will receive a link to the broadcast.
+                    </p>
+                </div>
+
+                <!-- Форма подачи заявки на Он-лайн просмотр -->
+
+                <form class="form online-view" action="./submit_online.php" method="post">
+
+                    <div class="online-view-wrap">
+                        <div class="online-view__elem">
+                            <label class="online-view__label" for="name">Name</label>
+                            <input class="online-view__input" type="text" id="name" name="name" placeholder="What is your name:">
+                            </div>
+    
+                        <div class="online-view__elem">
+                            <label class="online-view__label" for="tel">Phone</label>
+                            <input class="online-view__input" type="tel" id="tel" name="tel" placeholder="Your phone number:">
+                        </div>
+                        <button class="button btn-primary online-view__btm" type="submit" value="Отправить">submit</button>
+                    </div>
+
+                    <div class="first-checkbox">
+                        <label class="label">
+                          <input type="checkbox" class="checkbox" id="consent" name="consent" value="consent" checked>
+                          <span class="fake"></span>
+                          <span class="online-view__input" for="consent">I agree to the processing of personal data</span>
+                        </label>
+                      </div>
+            
+                </form>
+
+            </div>
+        </section>
+        
+        <!--------- Виды ремонта ------------>
+   
+        <section class="types">
+            <div class="conteiner types-content">
+
+                <!-- блок разделителя (заголовок - 1, картинка между линий - 2)  -->
+
+                <div class="separator-wrap">
+                    <div class="separator__title txt-dark">TYPES OF REPAIR</div>
+                    <div class="separator-icon-wrap">
+                        <div class="separator__line"></div>
+                        <div class="separator__icon types-icon"></div>
+                        <div class="separator__line"></div>
+                    </div>
+                </div>
+
+                <!-- Галерея с типами ремонта -->
+
+                <div class="types-gallery">
+
+                    <!-- Элемент 1 -->
+                    <div class="types-gallery-elem">
+
+                        <!-- картинка -->
+                        <img class="types__img" src="./images/redecorated.jpg" alt="redecorated">
+                        
+                        <!-- описание -->
+                        <div class="types-textbox">
+                            <div class="types__title">Redecorating</div>
+                            <ul class="types__ul">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div> 
+                        
+                        <!-- цена за м2 -->
+                        <div class="types__price">
+                            <span>from 900 rub / m2</span> 
+                        </div>
+
+                    </div>
+
+                    <!-- Элемент 2 -->
+                    <div class="types-gallery-elem">
+
+                        <!-- картинка -->
+                        <img class="types__img" src="./images/r_overlay.jpg" alt="redecorated">
+                        
+                        <!-- описание -->
+                        <div class="types-textbox">
+                            <div class="types__title">Overhaul</div>
+                            <ul class="types__ul">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div> 
+
+                        <!-- цена за м2 -->
+                        <div class="types__price">
+                            <span>from 1800 rub / m2</span> 
+                        </div>
+
+                    </div>
+
+                    <!-- Элемент 3 -->
+                    <div class="types-gallery-elem">
+
+                        <!-- картинка -->
+                        <img class="types__img" src="./images/r_repair.jpg" alt="redecorated">
+                        
+                        <!-- описание -->
+                        <div class="types-textbox">
+                            <div class="types__title">Designer Repair</div>
+                            <ul class="types__ul">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div> 
+                        
+                        <!-- цена -->
+                        <div class="types__price">
+                            <span>from 900 rub / m2</span> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок замеров -->
+
+            <div class="types-metering">
+
+                <div class="conteiner types-metering-content">
+
+                    <div class="types-metering-steps">sdfsdfsdf</div>
+
+                    <form class="form types-metering-form" action="./submit_meter.php" method="post">
+
+                        <div class="form-wrap">
+                            <div class="types-metering__elem">
+                                <label class="types-metering__label" for="nameMeter">Name</label>
+                                <input class="types-metering__input" type="text" id="nameMeter" name="nameMeter" placeholder="What is your name:">
+                                </div>
+        
+                            <div class="types-metering__elem">
+                                <label class="types-metering__label" for="telMeter">Phone</label>
+                                <input class="types-metering__input" type="tel" id="telMeter" name="telMeter" placeholder="Your phone number:">
+                            </div>
+                            <button class="button btn-primary types-metering__btm" type="submit" value="Отправить">submit</button>
+                        </div>
+    
+                        <div class="first-checkbox">
+                            <label class="label">
+                              <input type="checkbox" class="checkbox" id="consentMeter" name="consentMeter" value="consent" checked>
+                              <span class="fake"></span>
+                              <span class="types-metering__input" for="consentMeter">I agree to the processing of personal data</span>
+                            </label>
+                          </div>
+                
+                    </form>
+                        
+                </div>
+
+            </div>
+
+                        <!-- блок разделителя (заголовок - 1, картинка между линий - 2)  -->
+
+                        <div class="separator-wrap">
+                            <div class="separator__title txt-dark">TYPES OF REPAIR</div>
+                            <div class="separator-icon-wrap">
+                                <div class="separator__line"></div>
+                                <div class="separator__icon types-icon"></div>
+                                <div class="separator__line"></div>
+                            </div>
+                        </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

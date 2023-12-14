@@ -1,0 +1,885 @@
+body {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    background-color: white;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.conteiner {    
+    margin: 0 auto;
+    max-width: 1256px;
+}
+
+/* Шапка сайта */
+
+.header {
+    background-color: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+}
+
+
+/* Логотип */
+
+.logo, .tel {
+    font-size: 11px;
+    color: #E3B873;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+.logo {
+    margin-right: 32px;
+}
+
+/* Навигация по сайту */
+
+.header-navigation {
+    display: flex;
+    list-style: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.header-navigation__item{
+    margin-right: 53px;
+}
+
+.header-navigation__item:last-of-type {
+    margin-right: 0;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header-navigation__item a:hover {
+    color: #E3B873;
+}
+
+/* Контакты - связь*/
+
+.call {
+    display: flex;
+    align-items: center;
+}
+
+.tel {
+    margin-right: 45px;
+    padding-left: 18px;
+    text-decoration: underline;
+}
+
+.button {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    border: 0; 
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 11px;
+    color: white;
+}
+
+.btn-call {
+    height: 37px;
+    width: 161px;
+}
+
+/* ----------------- Секция  hero ---------------- */
+
+.hero {
+    background: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(../images/hero.jpg);
+    background-size: cover;
+    height: 707px;
+    padding-top: 192px;
+}
+
+.hero-conteiner {
+    padding-left: 42px;
+    max-width: 560px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%; 
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.title span {
+    color: #E3B873;
+}
+
+.hero-conteiner p {
+    font-size: 22px;
+    line-height: 162%;
+    color: #FFFFFF;
+}
+
+.btn-primary, .btn-app {
+    height: 51px;
+    width: 207px;
+}
+.hero-conteiner > .btn-primary {
+    margin: 3px 15px 0 0;
+}
+ 
+.btn-app {    
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: white;
+}
+
+.button:hover {
+    border-radius: 2px;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+/* ----------------- Секция projects ---------------- */
+.project-photo-block {
+    display: none;
+}
+
+.projects {
+    background: #131313;
+    height: 1074px;
+    padding-top: 105px;
+}
+
+.project-content {
+    width: 1171px;
+}
+
+.project-navigation {
+    margin: 0 0 0 491px;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.project-navigation__item {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 61px;
+    white-space: nowrap;
+    border-bottom: solid 1px transparent;
+    padding-bottom: 6px;
+}
+
+.item-active{
+    border-color: #E3B873;
+    color: #E3B873;
+ 
+}
+
+.project-navigation__item:hover{
+    /* border-color: #E3B873; */
+    color: #E3B873;
+ 
+}
+
+.project-card {
+    margin-top: 46px;
+    display: flex;
+    height: 482px;
+    justify-content: space-between
+}
+
+.project-description {
+    height: 390px;
+    width: 450px;
+}
+
+.project-img {
+    margin-left: 0px;
+    background: url(../images/project1.jpg);
+    width: 679px;
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    text-align: left;
+}
+
+.text  {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.project-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.project-description-conteiner {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description-el{
+    width: 190px;
+    margin-top: 14px;
+}
+
+.subtitle-md {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+
+}
+
+.description-text-md  {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: -6px;
+}
+
+.project-footer-point {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 15px; 
+}
+
+.point {
+    width: 10px; 
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.current-point{
+    background-color: #FFFFFF;
+}
+
+.point:hover {
+    background-color: #FFFFFF;
+}
+    
+.horizontal-flip {
+    transform: scaleX(-1);
+}
+
+/* <!------------------ Секция Контроль онлайн -------------> */
+
+.online-content {
+    margin-top: -328px;
+    max-width: 817px;
+}
+
+/* Обертка для всего разделителя */
+
+.separator-wrap {
+    margin: 0 auto;
+    display: flex;
+    width: 196px;
+    height: 70px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Заголовок разделителя */
+.separator__title {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.txt-white {
+    color: #FFFFFF;
+}
+
+/* обертка  блока линия-иконка-линия */
+.separator-icon-wrap {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.separator__line {
+    display: inline-block;
+    height: 2px;
+    width: 32px; 
+    background-color: #E3B873; 
+}
+
+.separator__icon {
+    width: 32px; 
+    height: 28px;
+    margin: 10px;
+}
+
+/* картинка online */
+
+.online-icon {
+    background-image: url(../images/online_icon.svg);
+}
+
+/* <------- видео-онлайн блок с картинкой, по центру круглая кнопка с треугольником ----->- */
+
+            /* Контейнер для видео и фото */
+.video-wrap {
+    position: relative;
+}
+
+.online-video {
+    margin-top: 32px;
+}
+
+            /* Изображение */
+.online-video-content {
+    height: 434px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+        url(../images/control.jpg);
+}
+
+            /* Кнопка */
+.video__button {
+    background-color: #E3B873;
+    background-image: url(../images/Polygon.svg);
+    background-repeat: no-repeat;
+    background-position: 55%;
+    border: none;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video__button:hover {
+    opacity: 0.8;
+}
+
+.online-video-button {
+    background-size: 22px;
+}
+
+        /*  <!-- Разделитель - длинная линия -->  */
+.separator__line-lg {
+    margin-top: 50px;
+    width: 55px; 
+    align-items: center;
+}
+
+/* <!-- Основной текст секции - по центру, черный, средний --> */
+.online-video-info {
+    margin: auto;
+    width: 681px;
+}
+
+.text-md {
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+}
+
+/* <!-- Форма подачи заявки на Он-лайн просмотр --> */
+
+
+
+.online-view {
+    text-align: center;
+    margin-top: 60px;
+    padding: 22px;
+}
+
+
+.online-view-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.online-view__elem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    height: 50px;
+}
+
+        /* label */
+.online-view__label {
+    font-size: 13px;
+    color: rgba(54, 54, 54, 0.5);
+    padding-left: 2px;
+}
+
+        /* input */
+.online-view__input {
+    width: 231px;
+    border-width: 0 0 1px 0;
+    padding: 5px 2px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+        /* Submit */
+.online-view__btm {
+    font-size: 13px;
+    line-height: 27px;
+}
+
+/* <!------- Чек-бокс ---------> */
+
+.label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+
+/* <!--------- Виды ремонта ------------> */
+
+.types-content {
+    margin-top: 120px;
+}
+
+/* иконка  разделителя types */
+.types-icon {
+    background-image: url(../images/types_icon.svg);
+    background-repeat: no-repeat;
+}
+
+.txt-dark {
+    color: #181818;
+}
+
+/* Галерея с типами ремонта */
+.types-gallery {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between
+}
+
+.types-gallery-elem {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+    
+/* картинка */
+.types__img {
+    height: 421px;
+    width: 392px;
+}
+
+/* описание */
+.types-textbox {
+    background-color: white;
+    height: 286px;
+    width: 330px;
+    margin: -125px 31px 0 31px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* описание - заголовок */
+.types__title {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-top: 25px;
+    margin-left: 34px;
+}
+
+/* описание - список */
+.types__ul {
+    padding-left: 50px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-top: 5px;
+}
+
+/* описание - цена */
+.types__price {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    margin: -25px 31px 0 31px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+    text-transform: uppercase; 
+    color: #FFFFFF;
+}
+
+/* -- Блок замеров -- */
+
+.types-metering {
+    background-image: url(../images/metering.png);
+    background-repeat: no-repeat;
+    background-position-x: -50%;
+    background-position-y: bottom;
+    height: 545px;
+    margin-top: 120px;
+}
+
+.types-metering-content {
+    height: 506px;
+    margin-top: 228px;
+    padding-left: 146px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.types-metering-steps {
+    background-color: #959595;
+    width: 392px;  
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;  
+    height: 509px;
+    width: 506px;
+    background-color: #959595;
+
+}
+
+
+
+
+/* Group 65 */
+
+position: absolute;
+width: 378.81px;
+height: 41.84px;
+left: 331px;
+top: 3732.14px;
+
+
+
+/* Our specialist will arrive for measurements per day contact, or appoint a date convenient for you */
+
+position: absolute;
+left: 27.07%;
+right: 50.71%;
+top: 49.77%;
+bottom: 49.71%;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+
+
+
+/* Rectangle 8.1 */
+
+position: absolute;
+left: 22.99%;
+right: 74.11%;
+top: 49.77%;
+bottom: 49.67%;
+
+background: #E3B873;
+border: 8px solid #FFFFFF;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+border-radius: 30px;
+
+
+/* 01 */
+
+position: absolute;
+left: 23.32%;
+right: 74.39%;
+top: 49.91%;
+bottom: 49.83%;
+
+font-family: 'Yeseva One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 64 */
+
+position: absolute;
+width: 146.15px;
+height: 41.76px;
+left: 331px;
+top: 3876px;
+
+
+
+/* Rectangle 8.2 */
+
+position: absolute;
+left: 22.99%;
+right: 74.11%;
+top: 51.69%;
+bottom: 47.76%;
+
+background: #E3B873;
+border: 8px solid #FFFFFF;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+border-radius: 30px;
+
+
+/* 02 */
+
+position: absolute;
+left: 23.27%;
+right: 74.43%;
+top: 51.83%;
+bottom: 47.91%;
+
+font-family: 'Yeseva One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Free metering */
+
+position: absolute;
+left: 27.02%;
+right: 66.86%;
+top: 51.82%;
+bottom: 47.92%;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+
+
+
+/* Group 63 */
+
+position: absolute;
+width: 164px;
+height: 41.76px;
+left: 331px;
+top: 4020px;
+
+
+
+/* Rectangle 8.3 */
+
+position: absolute;
+left: 22.99%;
+right: 74.11%;
+top: 53.61%;
+bottom: 45.84%;
+
+background: #E3B873;
+border: 8px solid #FFFFFF;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+border-radius: 30px;
+
+
+/* 03 */
+
+position: absolute;
+left: 23.26%;
+right: 74.44%;
+top: 53.74%;
+bottom: 45.98%;
+
+font-family: 'Yeseva One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Free consultation */
+
+position: absolute;
+left: 26.88%;
+right: 65.62%;
+top: 53.75%;
+bottom: 45.98%;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+
+
+
+/* Group */
+
+position: absolute;
+left: 22.99%;
+right: 59.38%;
+top: 55.53%;
+bottom: 43.92%;
+
+
+
+/* Rectangle 8.4 */
+
+position: absolute;
+left: 22.99%;
+right: 74.11%;
+top: 55.53%;
+bottom: 43.92%;
+
+background: #E3B873;
+border: 8px solid #FFFFFF;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+border-radius: 30px;
+
+
+/* 04 */
+
+position: absolute;
+left: 23.26%;
+right: 74.44%;
+top: 55.67%;
+bottom: 44.06%;
+
+font-family: 'Yeseva One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Get a cost estimate and the timing of your future repairs */
+
+position: absolute;
+left: 26.81%;
+right: 59.38%;
+top: 55.54%;
+bottom: 43.94%;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+

@@ -1,0 +1,163 @@
+/* body {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+} */
+
+/* @media screen and (max-width: 600px) {
+    body {
+        font-family: 'Yeseva One', serif;
+        margin: 0;
+        background-color: blue;
+    }
+  }  */
+
+/* body * {
+    box-sizing: border-box;
+} */
+
+.conteiner {
+    max-width: 12560px;
+}
+
+.header {
+    background-color: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+}
+
+.header-el {
+    margin: 0 18px;
+}
+
+.logo {
+    font-size: 11px;
+    color: #E3B873;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.header-navigation {
+    display: flex;
+    list-style: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.header-navigation__item{
+    margin-right: 47px;
+}
+
+.header-navigation__item:last-of-type {
+    margin-right: 0;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header-navigation__item a:hover {
+    color: #E3B873;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+}
+
+.tel {
+    margin-right: 45px;
+}
+
+.button {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    border: 0; 
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 11px;
+    color: white;
+}
+
+.btn-call {
+    height: 37px;
+    width: 161px;
+}
+
+/* 
+
+.btn-primary {
+    background: #E3B873;
+    color: white;
+}
+
+.btn-submit {
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: white;
+}
+
+.button:hover {
+    border-radius: 2px;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.5);
+}
+
+.tel {
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.hero {
+    background: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+		url(../images/hero.jpg);
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+
+}
+
+.hero-conteiner {
+    padding: 0 42px;
+    max-width: 690px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 132%; 
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.title span {
+    color: #E3B873;
+}
+
+.hero-conteiner p {
+    max-width: 514px;
+    margin: 45px 0;
+    font-family: 'Nunito Sans Reg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 163%;
+    color: #FFFFFF;
+}
+
+
+
+ */

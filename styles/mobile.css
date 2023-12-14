@@ -1,0 +1,364 @@
+/* для эрана меньше 768px */
+
+/* Навигация по сайту */
+
+nav {
+    display: none;
+}
+
+.btn-call {
+    display: none;
+}
+
+.conteiner {
+    min-width: 340px;
+    max-width: 375px;
+    padding: 0 18px;
+}
+
+.header-content {
+    height: 60px;
+    justify-content: space-between;
+}
+
+.tel {
+    margin-right: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: -0.04em;
+}
+
+/* ----------------- Секция  hero ---------------- */
+
+.hero {
+    height: 476px;
+    padding-top: 81px;
+}
+
+.hero-conteiner {
+    padding: 0;
+}
+
+.hero-conteiner>.button {
+    margin: 13px 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.hero-conteiner p {
+    font-size: 14px;
+    line-height: 136%;
+    margin-bottom: 39px;
+    max-width: 340px;
+}
+
+.hero-conteiner span {
+    white-space: nowrap;
+
+}
+
+.button {
+    width: 340px;
+    height: 51px;
+    box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+    border-radius: 0;
+    border: 0; 
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin: 26px 0;
+}
+
+.btn-app {
+    content: 'APPLICATION';
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: white;
+}
+
+.btn-app > span {
+    display: none;
+} 
+
+/* ----------------- Секция projects ---------------- */
+.projects {
+    padding-top: 30px;
+    height: 700px;
+}
+
+.project-card {
+    margin-top: 0;
+    flex-direction: column;
+}
+
+.project-navigation {
+    display: none;
+}
+
+.project-footer {
+    display: none;
+}
+
+
+.project-description {
+    height: 390px;
+    width: auto;
+}
+.subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.text  {
+    margin-top: 30px;
+    font-size: 11px;
+    line-height: 158.48%;;
+    text-align: center;
+}
+
+.project-photo-block {
+    margin: 72px 0 15px 0;
+    height: 242px;
+    position: relative;
+    background: url(../images/project2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrows {
+    background-color: #E3B873;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: 0 12px;
+}
+
+.prev-arrow {
+    background-image: url(../images/prev.svg);
+}
+
+.next-arrow {
+    background-image: url(../images/next.svg);
+}
+
+
+.description-el{
+    margin-top: 5px;
+    width: 160px;
+    height: 90px;
+}
+
+.subtitle-md {
+    font-size: 14px;
+    line-height: 138.6%;
+}
+
+.description-text-md  {
+    font-size: 11px;
+    line-height: 135.84%;
+    color: #FFFFFF;
+}
+
+
+/* <!------------------ Секция Контроль онлайн -------------> */
+.online {
+    background: #131313;
+}
+
+.online-content {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+/* Обертка для разделителя */
+
+.separator-wrap {
+    height: 95px;
+}
+
+/* Заголовок разделителя */
+
+.separator__title {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height:  138.6%;
+    text-align: center;
+}
+
+/* <------- видео-онлайн блок с картинкой, по центру круглая кнопка с треугольником ----->- */
+
+            /* Контейнер для видео и фото */
+
+.online-video {
+    margin-top: 24px;
+}
+
+            /* Изображение */
+.online-video-content {
+    height: 205px;
+    background-size: cover;
+}
+            /* Кнопка */
+.video__button {
+    background-size: 12px;
+    width: 37px;
+    height: 37px;
+}
+
+.video__button:hover {
+    opacity: 0.8;
+}
+
+
+        /*  <!-- Разделитель - длинная линия -->  */
+.marg_mini {
+    margin-top: -53px;
+}
+
+.separator__line-lg {
+    margin: 50px 0 10px 0; 
+}
+
+/* <!-- Основной текст секции - по центру, черный, средний --> */
+.online-video-info {
+    margin: auto;
+    width: auto;
+}
+
+.text-md {
+    font-size: 11px;
+    line-height: 168.48%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* <!-- Форма подачи заявки на Он-лайн просмотр --> */
+
+.online-view {
+    padding: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+
+.online-view-wrap {
+    /* height: 229px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+
+/* Submit */
+
+.online-view__btm {
+    position: absolute;
+    transform: translateY(300px);
+    font-size: 13px;
+    font-style: inherit;
+}
+
+.online-view__elem {
+    margin-top: 58px;
+}
+
+    /* label */
+.online-view__label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    line-height: 21px;
+}
+
+        /* input */
+.online-view__input {
+    width: 340px;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 0px 2px;
+    border-width: 0 0 1px 0;
+    line-height: 30px;
+}
+
+/* <!------- Чек-бокс ---------> */
+.first-checkbox {
+    padding-bottom: 80px;
+}
+
+
+/* <!--------- Виды ремонта ------------> */
+
+.types-content {
+    margin-top: 80px;
+}
+
+/* Галерея с типами ремонта */
+.types-gallery {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 18px;
+}
+
+
+.types-gallery-elem {
+    margin: 0;
+}
+    
+/* картинка */
+.types__img {
+    height: 365px;
+    width: 340px;
+}
+
+/* описание */
+.types-textbox {
+    height: 242px;
+    width: 272px;
+    margin: -142px 31px 0 0;    
+}
+
+
+/* описание - заголовок */
+.types__title {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+/* описание - список */
+.types__ul {
+    line-height: 22px;
+    color: #959595;
+    margin-top: 5px;
+}
+
+
+
+/* описание - цена */
+
+.types__price {
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+    margin: -21px 0 60px 0;
+
+}
